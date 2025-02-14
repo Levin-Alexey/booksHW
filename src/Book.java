@@ -10,6 +10,12 @@ public class Book {
         this.author = new Author(name, surname, rating);
         this.pages = pages;
     }
+    public Book(String title, int releaseYear, Author author, int rating, int pages) {
+        this.title = title;
+        this.releaseYear = releaseYear;
+        this.author = author;
+        this.pages = pages;
+    }
 
     public boolean isBig() {
         return pages > 500;
